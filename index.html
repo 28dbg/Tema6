@@ -8,13 +8,13 @@
 <body>
     <h1>Intrebari si raspunsuri</h1>
     <label  for="intrebare_input">Intrebare:</label>
-    <input  id="intrebare_input" placeholder="Introduceti intrebarea" onclick="verifica()"><br>
+    <input  id="intrebare_input" placeholder="Introduceti intrebarea" oninput="verifica()"><br>
     
     <label for="raspuns1_input">Raspuns 1:</label>
-    <input id="raspuns1_input" placeholder="Raspuns 1"onclick="verifica()"><br>
+    <input id="raspuns1_input" placeholder="Raspuns 1" oninput="verifica()"><br>
 
     <label for="raspuns2_input">Raspuns 2:</label>
-    <input id="raspuns2_input" placeholder="Raspuns 2" onclick="verifica()"><br>
+    <input id="raspuns2_input" placeholder="Raspuns 2" oninput="verifica()"><br>
     
     <button id="adaugabuton" onclick="adauga_intrebare()" disabled>ADD</button>
     <p id="mesaj"></p>

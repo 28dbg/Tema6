@@ -20,7 +20,7 @@ function verifica(){
     // }else{
     //     document.getElementById('adaugabuton').disabled=true;
     // }
-    if(intrebareinput>0 && raspuns1.length>=3 &&raspuns2.length>=3){
+    if(intrebareinput.length >0 && raspuns1.length>=3 && raspuns2.length>=3){
         document.getElementById('adaugabuton').disabled=false;
     }else{
         document.getElementById('adaugabuton').disabled=true;
@@ -52,6 +52,6 @@ function adauga_intrebare(){
     document.getElementById('raspuns1_input').value='';
     document.getElementById('raspuns2_input').value='';
     document.getElementById('adaugabuton').disabled= true;
-    document.getElementById('mesaj').innerText="Intrebare adaugata:" + intrebareobj.intrebare;
-
+    console.log(intrebareobj)
+    localStorage.setItem('intrebari',)
 }   
